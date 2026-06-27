@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alfian Seftina Sari | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="progress"></div>
+
+  <!-- Top Navigation -->
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <span class="navbar__logo">Portfolio</span>
+      <div class="navbar__links">
+        <a class="navbar__link" href="#about">About</a>
+        <a class="navbar__link" href="#projects">Projects</a>
+        <a class="navbar__link" href="#experience">Experience</a>
+        <a class="navbar__link" href="#skills">Skills</a>
+        <a class="navbar__link" href="#education">Education</a>
+        <a class="navbar__link" href="#contact">Contact</a>
+        <a class="btn btn--ghost" href="admin.html">Admin</a>
+        <a class="btn btn--primary" href="assets/CV_Alfian_Seftina_Sari.pdf"
+          download="CV_Alfian_Seftina_Sari.pdf">Resume</a>
+      </div>
+      <button class="navbar__menu-btn" aria-label="Open menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero__shader">
+      <canvas id="shader-canvas"></canvas>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__avatar-wrap">
+        <div class="hero__avatar">
+          <img src="assets/foto-profil.jpg" alt="Alfian Seftina Sari professional headshot" />
+        </div>
+      </div>
+
+      <h1 class="display hero__name">Alfian Seftina Sari</h1>
+      <p class="headline-md text-secondary hero__role">
+        <span class="typing" id="typing-text"></span>
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#projects">View Projects</a>
+        <a class="btn btn--ghost" href="assets/CV_Alfian_Seftina_Sari.pdf">Download CV</a>
+      </div>
+
+      <div class="hero__socials">
+        <a class="hero__social-link" href="https://github.com/smilling19" aria-label="GitHub" target="_blank"
+          rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a class="hero__social-link" href="https://www.linkedin.com/in/alfian-seftina-sari-9a2150399"
+          aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a class="hero__social-link" href="https://www.instagram.com/alfiansftna_?igsh=MXRxYmZjbmVsdHJmOA=="
+          aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section class="section section--white" id="about">
+    <div class="container about__grid">
+      <div class="reveal">
+        <div class="about__image-wrap">
+          <img src="assets/about me.jpeg" alt="Alfian Seftina Sari Workspace/Photo" />
+        </div>
+      </div>
+      <div class="reveal delay-200 about__text">
+        <h2 class="headline-lg">About Me</h2>
+        <p>
+          Hi, I'm Alfian Seftina Sari, an Informatics Engineering student at Raja Ali Haji Maritime University with a
+          strong passion for Software Engineering and Web Development. I enjoy transforming ideas into functional,
+          user-friendly digital solutions by combining clean code, thoughtful design, and efficient problem-solving.
+        </p>
+        <p>
+          Throughout my academic journey, I have worked on several web application projects involving database design,
+          backend development, and responsive user interfaces using technologies such as Flask, MySQL, HTML, CSS, and
+          JavaScript. These experiences have strengthened my technical abilities while also improving my
+          teamwork, communication, and adaptability.
+        </p>
+        <p>
+          I believe that technology should solve real-world problems and create meaningful experiences for users. As I
+          continue learning and growing, I am excited to contribute to innovative projects, collaborate with talented
+          teams, and build software that makes a positive impact.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Grid -->
+  <section class="section section--bg" id="skills">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2 class="headline-lg">Core Competencies</h2>
+        <p class="text-muted">
+          A comprehensive toolkit of technical and soft skills developed
+          through academic rigor and hands-on projects.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="glass-card shimmer reveal">
+          <span class="material-symbols-outlined glass-card__icon">code</span>
+          <h3 class="headline-md">Programming</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <div class="glass-card shimmer reveal delay-100">
+          <span class="material-symbols-outlined glass-card__icon">dns</span>
+          <h3 class="headline-md">Backend</h3>
+          <ul>
+            <li>Flask</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>REST API</li>
+          </ul>
+        </div>
+
+        <div class="glass-card shimmer reveal delay-200">
+          <span class="material-symbols-outlined glass-card__icon">desktop_windows</span>
+          <h3 class="headline-md">Frontend Development</h3>
+          <ul>
+            <li>React.js</li>
+            <li>Next.js</li>
+            <li>Tailwind CSS</li>
+            <li>Bootstrap</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+
+        <div class="glass-card shimmer reveal">
+          <span class="material-symbols-outlined glass-card__icon">database</span>
+          <h3 class="headline-md">Database</h3>
+          <ul>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+
+        <div class="glass-card shimmer reveal delay-100">
+          <span class="material-symbols-outlined glass-card__icon">terminal</span>
+          <h3 class="headline-md">Tools & Technologies</h3>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>Figma</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+
+        <div class="glass-card shimmer reveal delay-200">
+          <span class="material-symbols-outlined glass-card__icon">groups</span>
+          <h3 class="headline-md">Soft Skills</h3>
+          <ul>
+            <li>Technical Writing</li>
+            <li>Teamwork</li>
+            <li>Communication</li>
+            <li>Time Management</li>
+            <li>Adaptability</li>
+            <li>Collaboration</li>
+            <li>Problem Solving</li>
+            <li>Critical Thinking</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="section section--white" id="projects">
+    <div class="container">
+      <h2 class="headline-lg text-center reveal" style="margin-bottom: 4rem;">Featured Projects</h2>
+
+      <div class="projects__grid">
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-card__media">
+            <div class="project-card__media-bg" style="background-image: url('assets/campus-lost-tracker.jpeg')">
+            </div>
+          </div>
+          <div class="project-card__tags">
+            <span class="tag">Mobile</span>
+            <span class="tag">Flutter</span>
+            <span class="tag">Node.js</span>
+          </div>
+          <h3 class="headline-md project-card__title">Campus Lost Tracker</h3>
+          <p class="project-card__desc">
+            A mobile-based lost-and-found information system for the campus environment, featuring automatic matching
+            (Smart Match), secret question verification, and real-time chat via Socket.IO.
+          </p>
+          <a class="project-card__link" href="https://github.com/Hana-nas/Campus-Lost-Tracker.git" target="_blank"
+            rel="noopener noreferrer">
+            View Project <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal delay-200">
+          <div class="project-card__media">
+            <div class="project-card__media-bg" style="background-image: url('assets/freshbar.png')">
+            </div>
+          </div>
+          <div class="project-card__tags">
+            <span class="tag">Web App</span>
+            <span class="tag">Vue.js</span>
+            <span class="tag">Express.js</span>
+          </div>
+          <h3 class="headline-md project-card__title">Freshbar</h3>
+          <p class="project-card__desc">
+            A smart barcode system for monitoring the freshness of fruits and vegetables using a color indicator
+            algorithm (green/yellow/red), batch inventory management, and hardware integration.
+          </p>
+          <a class="project-card__link" href="#">
+            View Project <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal">
+          <div class="project-card__media">
+            <div class="project-card__media-bg" style="background-image: url('assets/pengolahan-citra.jpeg')">
+            </div>
+          </div>
+          <div class="project-card__tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">YOLOv8</span>
+            <span class="tag">Python</span>
+          </div>
+          <h3 class="headline-md project-card__title">Detection of Starfish and Shallow-Water Marine Life Using YOLOv8
+          </h3>
+          <p class="project-card__desc">
+            An automated system for detecting starfish and shallow-water marine life in underwater images using YOLOv8n
+            with image preprocessing techniques (CLAHE, Red Channel Enhancement) and object segmentation.
+          </p>
+          <a class="project-card__link" href="#">
+            View Project <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal delay-200">
+          <div class="project-card__media">
+            <div class="project-card__media-bg" style="background-image: url('assets/kompuwan.png')">
+            </div>
+          </div>
+          <div class="project-card__tags">
+            <span class="tag">Cloud Computing</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Next.js</span>
+          </div>
+          <h3 class="headline-md project-card__title">Sistem Pengumpulan Tugas Akademik</h3>
+          <p class="project-card__desc">
+            Implementation of an integrated, AWS cloud-based academic assignment collection system using the PaaS
+            service model with EC2, RDS PostgreSQL, S3, CloudFront, and Load Balancer (ALB).
+          </p>
+          <a class="project-card__link" href="#">
+            View Project <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organizational Experience Timeline -->
+  <section class="section section--bg" id="experience">
+    <div class="container">
+      <h2 class="headline-lg text-center reveal" style="margin-bottom: 4rem;">Organizational Experience</h2>
+
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-item__row">
+            <div class="timeline-item__date timeline-item__date--right">2025</div>
+            <div class="timeline-item__dot"></div>
+            <div class="timeline-item__content">
+              <div class="glass-card">
+                <span class="timeline-item__date-mobile">2025</span>
+                <h4 class="headline-md timeline-item__role">Secretary of the Press Division</h4>
+                <p class="timeline-item__org">Informatics Engineering Student Association (HMTI)</p>
+                <p class="timeline-item__desc">
+                  Handled the division’s administrative tasks, including meeting minutes, activity records, and work
+                  reports as secretary. Coordinated with the team to ensure that accurate and timely information is
+                  provided to members and the public.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item reveal delay-100">
+          <div class="timeline-item__row">
+            <div class="timeline-item__content">
+              <div class="glass-card">
+                <span class="timeline-item__date-mobile">2024</span>
+                <h4 class="headline-md timeline-item__role">Member of the Press and Information Division</h4>
+                <p class="timeline-item__org">Informatics Engineering Student Association (HMTI)</p>
+                <p class="timeline-item__desc">
+                  Managed and disseminated information about the organization’s activities through social media and
+                  internal communication platforms. Contributed to the creation of publication content such as posters,
+                  documentation, and event coverage.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item__dot"></div>
+            <div class="timeline-item__date timeline-item__date--left">2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section section--white" id="education">
+    <div class="container">
+      <h2 class="headline-lg text-center reveal" style="margin-bottom: 4rem;">Education</h2>
+
+      <div class="grid grid-3">
+        <div class="glass-card reveal">
+          <span class="material-symbols-outlined glass-card__icon">school</span>
+          <h3 class="headline-md">Raja Ali Haji Maritime University</h3>
+          <p class="text-secondary" style="margin-bottom: 1rem;">Bachelor of Engineering (S.T.) in Informatics
+            Engineering</p>
+          <div class="edu-card__footer">
+            <span class="label-sm">GPA: 3.4/4.0</span>
+            <span class="label-sm">Exp. 2027</span>
+          </div>
+        </div>
+
+        <div class="glass-card reveal delay-100">
+          <span class="material-symbols-outlined glass-card__icon">menu_book</span>
+          <h3 class="headline-md">Relevant Coursework</h3>
+          <ul>
+            <li>Web Programming</li>
+            <li>Image Processing</li>
+            <li>Cloud Computing</li>
+            <li>Software Project Management</li>
+          </ul>
+        </div>
+
+        <div class="glass-card reveal delay-200">
+          <span class="material-symbols-outlined glass-card__icon">workspace_premium</span>
+          <h3 class="headline-md">Certifications</h3>
+          <ul>
+            <li>Data Science & Machine Learning</li>
+            <li>Indobot Academy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Grid -->
+  <section class="section section--bg">
+    <div class="container">
+      <h2 class="headline-lg text-center reveal" style="margin-bottom: 4rem;">Certifications</h2>
+
+      <div class="cert-grid">
+        <div class="cert-card glass-card reveal">
+          <img src="assets/Alfian Seftina Sari - Sertifikat SKPI Data Science & Machine Learning_page-0001.jpg"
+            alt="Sertifikat SKPI Data Science & Machine Learning" />
+        </div>
+        <div class="cert-card glass-card reveal delay-100">
+          <img src="assets/Alfian Seftina Sari-Sertifikat Pemateri Canva 2024.jpg"
+            alt="Sertifikat Pemateri Canva 2024" />
+        </div>
+        <div class="cert-card glass-card reveal delay-200">
+          <img src="assets/SERTIFIKAT PANITIA LDK 2025.png" alt="Sertifikat Panitia LDK 2025" />
+        </div>
+        <div class="cert-card glass-card reveal delay-300">
+          <img src="assets/sertif dies natalis.png" alt="Sertifikat Dies Natalis" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section--white" id="contact">
+    <div class="container">
+      <div class="glass-card contact-card">
+        <div class="contact-card__info">
+          <h2 class="headline-lg" style="color: inherit; margin-bottom: 2rem;">Get in Touch</h2>
+          <p>
+            I'm currently looking for new opportunities and collaborations.
+            Whether you have a question or just want to say hi, I'll try my
+            best to get back to you!
+          </p>
+
+          <div class="contact-info-row">
+            <span class="material-symbols-outlined">mail</span>
+            <span id="contact-email">alfianseftina@gmail.com</span>
+          </div>
+          <div class="contact-info-row">
+            <span class="material-symbols-outlined">location_on</span>
+            <span id="contact-location">Tanjungpinang, Riau Island</span>
+          </div>
+
+          <div class="contact-socials">
+            <a class="contact-social-btn" href="https://github.com/smilling19" aria-label="GitHub" target="_blank"
+              rel="noopener noreferrer">
+              <i class="bi bi-github" style="font-size: 20px;"></i>
+            </a>
+            <a class="contact-social-btn" href="https://www.linkedin.com/in/alfian-seftina-sari-9a2150399"
+              aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin" style="font-size: 20px;"></i>
+            </a>
+            <a class="contact-social-btn" href="https://www.instagram.com/alfiansftna_?igsh=MXRxYmZjbmVsdHJmOA=="
+              aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram" style="font-size: 20px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card__form">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input class="form-control" type="text" id="full-name" name="full-name" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input class="form-control" type="email" id="email" name="email" placeholder="name@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4"
+                placeholder="How can I help you?"></textarea>
+            </div>
+            <button class="btn btn--primary btn--full" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__logo">Portfolio</span>
+      <p class="footer__copy">© 2026 Alfian Seftina Sari.</p>
+      <a class="footer__back-to-top" href="#" aria-label="Back to top">
+        <span class="material-symbols-outlined">keyboard_arrow_up</span>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Image Lightbox Modal -->
+  <div id="image-modal" class="modal">
+    <span class="modal__close">&times;</span>
+    <img class="modal__content" id="modal-img" alt="Enlarged project screenshot" />
+    <div id="modal-caption" class="modal__caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
